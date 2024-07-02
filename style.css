@@ -14,7 +14,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: rgb(E7,E4,EC);
+    background-color: rgb(E7, E4, EC);
     color: white; 
     padding-top: 4em;
     padding-bottom: 4em;
@@ -136,7 +136,7 @@ label {
 }
 
 footer {
-    background-color: #564787;
+    background-color: rgb(56, 47, 87);
     color: white; 
     padding-top: 1em;
     padding-bottom: 1em;
