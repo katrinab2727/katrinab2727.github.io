@@ -19,7 +19,7 @@ header {
     background-color: rgb(56, 47, 87);
     color: white; 
     padding-top: 4em;
-    padding-bottom: 4em;
+    padding-bottom: 2em; /* Adjusted padding */
     text-align: center;
     position: relative;
 }
