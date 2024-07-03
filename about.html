@@ -62,7 +62,7 @@
             color: transparent;
             font-size: 2em;
             height: 1em;
-            width: 100%; /* Ensures the element takes up the full width of the container */
+            width: 100%;
         }
         h1::before {
             content: attr(data-text);
@@ -75,15 +75,18 @@
             color: #ffffff;
             border-right: 2px solid #ffffff;
             overflow: hidden;
-            white-space: nowrap; /* Prevents text from wrapping to the next line */
+            white-space: nowrap;
             animation: animate 10s linear infinite;
         }
         @keyframes animate {
             0% {
                 width: 0;
             }
-            70%, 90% {
+            50% {
                 width: 100%;
+            }
+            100% {
+                width: 0;
             }
         }
         h2 {
