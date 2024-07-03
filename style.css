@@ -53,16 +53,13 @@ nav {
         }
 
 h1 {
-    position: relative;
-    display: inline-block;
-    color: transparent;
-    font-size: 2em;
-    height: 1em;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+            position: relative;
+            display: inline-block;
+            color: transparent;
+            font-size: 2em;
+            height: 1em;
+            width: 100%;
+        }
 
 h1::before {
     content: attr(data-text);
