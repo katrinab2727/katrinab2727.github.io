@@ -102,39 +102,6 @@ label {
     cursor: pointer;
 }
 
-#weather-widget-container {
-    display: flex;
-}
-.weather-widget {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    flex: 4;
-    background-color : white; 
-    color : black;
-}
-.weather-icon {
-    width: 3em;
-    height: 3em;
-}
-.weather-date {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-#weather-widget-location {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-}
-@media (max-width: 767px) {
-    #weather-widget-container {
-        display: block;
-    }
-}
-
 footer {
     background-color: rgb(56, 47, 87);
     color: white; 
