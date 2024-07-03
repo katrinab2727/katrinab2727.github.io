@@ -26,6 +26,7 @@
             color: white; 
             padding-top: 4em;
             padding-bottom: 4em;
+            text-align: center;
         }
         nav {
             width: 100%;
@@ -55,19 +56,18 @@
             color: white;
         }
         h1 {
-            margin-left: 8em;
-            margin-right: 9em;
+            position: relative;
+            display: inline-block;
             color: transparent;
             font-size: 2em;
             height: 1em;
-            text-align: center;
-            position: relative;
         }
         h1::before {
             content: attr(data-text);
             position: absolute;
             top: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
             height: 100%;
             color: #ffffff;
@@ -173,4 +173,3 @@
     </footer>
 </body>
 </html>
-
