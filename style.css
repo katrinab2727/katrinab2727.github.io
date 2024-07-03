@@ -8,7 +8,7 @@
 
 body {
     background-color: rgb(240, 236, 245);
-    color: white;
+    color: black;
     font-size: 2em;
     font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
@@ -44,9 +44,9 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 8px;
-    background-color: rgb(56, 47, 87);
-    color: white;
+    padding: 10px 20px;
+    background-color: rgb(240, 236, 245);
+    color: rgb(56, 47, 87);
     text-decoration: none;
     border-radius: 5px;
     font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
@@ -55,7 +55,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
-    color: rgb(56, 47, 87);
+    color: black;
 }
 
 h1 {
@@ -113,25 +113,10 @@ main {
     justify-content: center;
 }
 
-.button-container {
-    margin-top: 2em;
-}
-
-.button-container a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: rgb(56, 47, 87);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
-    transition: background-color 0.3s ease;
-}
-
-.button-container a:hover {
-    background-color: white;
-    color: rgb(56, 47, 87);
+section {
+    margin-bottom: 2em;
+    padding: 0 1em;
+    max-width: 600px;
 }
 
 footer {
