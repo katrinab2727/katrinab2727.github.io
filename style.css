@@ -156,16 +156,16 @@ footer p {
         color: white;
     }
     25% {
-        color: #b8a3b2;
+        color: rgb(b8, a3, b2);
     }
     50% {
-        color: #947d8e;
+        color: rgb(94, 7d, 8e);
     }
     75% {
-        color: #725a6b;
+        color: rgb(72, 5a, 6b);
     }
     100% {
-        color: #DBCBD8;
+        color: rgb(DB, CB, D8);
     }
 }
 
