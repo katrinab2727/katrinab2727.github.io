@@ -5,10 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - My GitHub Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Abhaya Libre';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3tmeuGtX-Co5MNzeAOqinEQfEnXgPRE4g.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        body {
+            background-color: rgb(240, 236, 245);
+            color: white;
+            font-size: 2em;
+            font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(56, 47, 87);
+            color: white; 
+            padding-top: 4em;
+            padding-bottom: 4em;
+        }
+        nav {
+            width: 100%;
+            margin: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }   
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            display: block;
+            padding: 8px;
+            background-color: white;
+            color: rgb(56, 47, 87);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: rgb(240, 236, 245);
+            color: white;
+        }
+        h1 {
+            margin-left: 8em;
+            margin-right: 9em;
+            color: transparent;
+            font-size: 2em;
+            height: 1em;
+            text-align: center;
+            position: relative;
+        }
+        h1::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: #ffffff;
+            border-right: 2px solid #ffffff;
+            overflow: hidden;
+            animation: animate 10s linear infinite;
+        }
+        @keyframes animate {
+            0% {
+                width: 0;
+            }
+            70%, 90% {
+                width: 100%;
+            }
+        }
+        h2 {
+            margin: 2em;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        h3 {
+            margin: 1em;
+            color: #417643;
+        }
+        main {
+            margin: 2em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            background-color: rgb(56, 47, 87);
+            color: white; 
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        footer p {
+            margin: 0 2em;
+            font-size: 1em;
+            text-align: center;
+        }
+        .footer-design {
+            animation: colorChange 3s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% {
+                color: white;
+            }
+            25% {
+                color: rgb(184, 163, 178);
+            }
+            50% {
+                color: rgb(148, 125, 142);
+            }
+            75% {
+                color: rgb(114, 90, 107);
+            }
+            100% {
+                color: rgb(219, 203, 216);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1 data-text="About Me">About Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -41,7 +169,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Name</p>
+        <p class="footer-design">&copy; 2024 My Name</p>
     </footer>
 </body>
 </html>
+
