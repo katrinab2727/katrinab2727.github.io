@@ -25,38 +25,32 @@ header {
 }
 
 nav {
-    width: 100%;
-    margin: auto;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    background-color: rgb(240, 236, 245);
-    color: rgb(56, 47, 87);
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: white;
-    color: black;
-}
+            width: 100%;
+            margin: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }   
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            display: block;
+            padding: 8px;
+            background-color: rgb(240, 236, 245);
+            color: rgb(56, 47, 87);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+        }
 
 h1 {
     position: relative;
