@@ -131,3 +131,15 @@
                 color: rgb(219, 203, 216);
             }
         }
+
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-image:hover {
+            transform: scale(1.05);
+        }
+
