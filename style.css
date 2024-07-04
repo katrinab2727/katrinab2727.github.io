@@ -142,4 +142,17 @@
         .project-image:hover {
             transform: scale(1.05);
         }
+        .project-description {
+            margin-top: 1em;
+            font-size: 1em;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .project-description ul {
+            list-style-type: disc;
+            margin-left: 2em;
+        }
+
 
