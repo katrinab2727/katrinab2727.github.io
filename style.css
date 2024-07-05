@@ -150,7 +150,7 @@ footer p {
 
 .project-image {
     width: 100%;
-    max-width: 300px; /* Adjust the size here */
+    max-width: 350px; /* Adjust the size here */
     border: none;
     transition: transform 0.3s ease-in-out;
 }
