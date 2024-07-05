@@ -9,7 +9,7 @@
 body {
     background-color: rgb(240, 236, 245);
     color: black;
-    font-size: 2em;
+    font-size: 1em; /* Adjusted font-size for better readability */
     font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -18,8 +18,8 @@ body {
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align: center;
     position: relative;
 }
@@ -49,6 +49,7 @@ nav ul li a {
     color: rgb(56, 47, 87);
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Added smooth transition */
 }
 
 nav ul li a:hover {
@@ -93,15 +94,10 @@ h1::before {
 }
 
 h2 {
-    margin: 2em;
+    margin: 2em 0;
     color: black;
     font-size: 1.5em;
     text-align: center;
-}
-
-h3 {
-    margin: 1em;
-    color: #417643;
 }
 
 main {
@@ -116,13 +112,7 @@ main {
 footer {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-footer p {
-    margin: 0 2em;
-    font-size: 1em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -150,7 +140,7 @@ footer p {
 
 .project-image {
     width: 100%;
-    max-width: 400px; /* Adjust the size here */
+    max-width: 300px;
     border: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -170,4 +160,9 @@ footer p {
 .project-description ul {
     list-style-type: disc;
     margin-left: 2em;
+}
+
+.video-iframe {
+    max-width: 100%;
+    border: none;
 }
