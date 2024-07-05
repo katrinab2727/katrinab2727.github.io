@@ -9,7 +9,7 @@
 body {
     background-color: rgb(240, 236, 245);
     color: black;
-    font-size: 1em; /* Adjusted font-size for better readability */
+    font-size: 1.2em; /* Adjusted font-size for better readability */
     font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -18,8 +18,8 @@ body {
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2.5em; /* Increased padding */
+    padding-bottom: 2.5em;
     text-align: center;
     position: relative;
 }
@@ -39,12 +39,12 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1em;
+    margin: 0 1.5em; /* Increased margin */
 }
 
 nav ul li a {
     display: block;
-    padding: 8px;
+    padding: 12px; /* Increased padding */
     background-color: rgb(240, 236, 245);
     color: rgb(56, 47, 87);
     text-decoration: none;
@@ -61,7 +61,7 @@ h1 {
     position: relative;
     display: inline-block;
     color: transparent;
-    font-size: 2em;
+    font-size: 2.5em; /* Increased font size */
     height: 1em;
     width: 100%;
 }
@@ -94,14 +94,14 @@ h1::before {
 }
 
 h2 {
-    margin: 2em 0;
+    margin: 2.5em 0; /* Increased margin */
     color: black;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increased font size */
     text-align: center;
 }
 
 main {
-    margin: 2em;
+    margin: 2.5em; /* Increased margin */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ main {
 footer {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding: 1em;
+    padding: 1.5em; /* Increased padding */
     text-align: center;
 }
 
@@ -140,7 +140,7 @@ footer {
 
 .project-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 450px; /* Adjusted size */
     border: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -150,8 +150,8 @@ footer {
 }
 
 .project-description {
-    margin-top: 1em;
-    font-size: 1em;
+    margin-top: 1.2em; /* Adjusted margin */
+    font-size: 1.2em; /* Increased font size */
     text-align: left;
     max-width: 900px;
     margin: auto;
