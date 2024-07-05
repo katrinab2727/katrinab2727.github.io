@@ -1,158 +1,173 @@
+@font-face {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3tmeuGtX-Co5MNzeAOqinEQfEnXgPRE4g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-        @font-face {
-            font-family: 'Abhaya Libre';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3tmeuGtX-Co5MNzeAOqinEQfEnXgPRE4g.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-        body {
-            background-color: rgb(240, 236, 245);
-            color: black;
-            font-size: 2em;
-            font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: rgb(56, 47, 87);
-            color: white; 
-            padding-top: 4em;
-            padding-bottom: 4em;
-            text-align: center;
-            position: relative;
-        }
-        nav {
-            width: 100%;
-            margin: auto;
-        }
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }   
-        nav ul li {
-            margin: 0 1em;
-        }
-        nav ul li a {
-            display: block;
-            padding: 8px;
-            background-color: rgb(240, 236, 245);
-            color: rgb(56, 47, 87);
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        nav ul li a:hover {
-            background-color: white;
-            color: black;
-        }
-        h1 {
-            position: relative;
-            display: inline-block;
-            color: transparent;
-            font-size: 2em;
-            height: 1em;
-            width: 100%;
-        }
-        h1::before {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 100%;
-            color: #ffffff;
-            border-right: 2px solid #ffffff;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: animate 10s linear infinite;
-        }
-        @keyframes animate {
-            0% {
-                width: 0;
-            }
-            50% {
-                width: 100%;
-            }
-            100% {
-                width: 0;
-            }
-        }
-        h2 {
-            margin: 2em;
-            color: black;
-            font-size: 1.5em;
-            text-align: center;
-        }
-        h3 {
-            margin: 1em;
-            color: #417643;
-        }
-        main {
-            margin: 2em;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        footer {
-            background-color: rgb(56, 47, 87);
-            color: white; 
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-        footer p {
-            margin: 0 2em;
-            font-size: 1em;
-            text-align: center;
-        }
-        .footer-design {
-            animation: colorChange 3s infinite alternate;
-        }
-        @keyframes colorChange {
-            0% {
-                color: white;
-            }
-            25% {
-                color: rgb(184, 163, 178);
-            }
-            50% {
-                color: rgb(148, 125, 142);
-            }
-            75% {
-                color: rgb(114, 90, 107);
-            }
-            100% {
-                color: rgb(219, 203, 216);
-            }
-        }
+body {
+    background-color: rgb(240, 236, 245);
+    color: black;
+    font-size: 2em;
+    font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .project-image {
-            width: 100%;
-            max-width: 600px;
-            border: none;
-            transition: transform 0.3s ease-in-out;
-        }
+header {
+    background-color: rgb(56, 47, 87);
+    color: white;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    text-align: center;
+    position: relative;
+}
 
-        .project-image:hover {
-            transform: scale(1.05);
-        }
-        .project-description {
-            margin-top: 1em;
-            font-size: 1em;
-            text-align: left;
-            max-width: 600px;
-            margin: auto;
-        }
+nav {
+    width: 100%;
+    margin: auto;
+}
 
-        .project-description ul {
-            list-style-type: disc;
-            margin-left: 2em;
-        }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
+nav ul li {
+    margin: 0 1em;
+}
 
+nav ul li a {
+    display: block;
+    padding: 8px;
+    background-color: rgb(240, 236, 245);
+    color: rgb(56, 47, 87);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    font-size: 2em;
+    height: 1em;
+    width: 100%;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    color: #ffffff;
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+h2 {
+    margin: 2em;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    margin: 1em;
+    color: #417643;
+}
+
+main {
+    margin: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(56, 47, 87);
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    margin: 0 2em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.footer-design {
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+    25% {
+        color: rgb(184, 163, 178);
+    }
+    50% {
+        color: rgb(148, 125, 142);
+    }
+    75% {
+        color: rgb(114, 90, 107);
+    }
+    100% {
+        color: rgb(219, 203, 216);
+    }
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the size here */
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.project-description {
+    margin-top: 1em;
+    font-size: 1em;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
