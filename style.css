@@ -13,7 +13,7 @@ body {
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 3em;
+    padding-top: 5em; /* Increased padding-top */
     padding-bottom: 3em;
     text-align: center;
     position: relative;
@@ -157,6 +157,7 @@ footer p {
 .project-description ul {
     list-style-type: disc;
     margin-left: 2em;
+    padding-left: 1em; /* Ensure bullets are indented */
 }
 
 /* Card Layout for Projects */
@@ -203,6 +204,6 @@ section:hover {
 .video-iframe {
     width: 100%;
     max-width: 1000px; /* Adjusted max-width */
-    height: 800px; /* Increased height */
+    height: 700px; /* Adjusted height */
     margin-top: 1em; /* Added margin top */
 }
