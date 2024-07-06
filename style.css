@@ -18,7 +18,7 @@ body {
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 3em; /* Reduce top padding slightly */
+    padding-top: 2.5em; /* Reduce top padding slightly */
     padding-bottom: 3em; /* Adjust bottom padding if necessary */
     text-align: center;
     position: relative;
@@ -62,7 +62,7 @@ h1 {
     display: inline-block;
     color: transparent;
     font-size: 2em;
-    height: 2em; /* Increase height */
+    height: 1.75em; /* Increase height */
     width: 100%;
 }
 
@@ -202,4 +202,21 @@ footer p {
 
 .contact-form button:hover {
     background-color: rgb(36, 27, 67);
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 900px;
+}
+
+.video-iframe {
+    width: 100%;
+    height: 500px; /* Adjust the height here */
+    border: none;
+    margin-bottom: 1em;
 }
