@@ -18,8 +18,8 @@ body {
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 3em; /* Reduce top padding slightly */
+    padding-bottom: 3em; /* Adjust bottom padding if necessary */
     text-align: center;
     position: relative;
     margin-bottom: 2em; /* Add some margin to the bottom */
@@ -62,7 +62,7 @@ h1 {
     display: inline-block;
     color: transparent;
     font-size: 2em;
-    height: 1em;
+    height: 2em; /* Increase height */
     width: 100%;
 }
 
