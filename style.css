@@ -1,32 +1,22 @@
-@font-face {
-    font-family: 'Abhaya Libre';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3tmeuGtX-Co5MNzeAOqinEQfEnXgPRE4g.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+/* General Styles */
 body {
     background-color: rgb(240, 236, 245);
     color: black;
-    font-size: 1.5em; /* Decreased font-size */
+    font-size: 1.2em; /* Slightly smaller than before */
     font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 3em; /* Decreased padding */
-    padding-bottom: 3em;
+    padding-top: 3em; /* Adjusted padding */
+    padding-bottom: 3em; /* Adjusted padding */
     text-align: center;
     position: relative;
-}
-
-nav {
-    width: 100%;
-    margin: auto;
 }
 
 nav ul {
@@ -39,17 +29,17 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1em; /* Decreased margin */
+    margin: 0 1em;
 }
 
 nav ul li a {
     display: block;
-    padding: 10px; /* Decreased padding */
+    padding: 10px; /* Increased padding */
     background-color: rgb(240, 236, 245);
     color: rgb(56, 47, 87);
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Added smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -61,7 +51,7 @@ h1 {
     position: relative;
     display: inline-block;
     color: transparent;
-    font-size: 2.5em; /* Decreased font size */
+    font-size: 2.5em; /* Increased font size */
     height: 1em;
     width: 100%;
 }
@@ -94,14 +84,19 @@ h1::before {
 }
 
 h2 {
-    margin: 2.5em 0; /* Decreased margin */
+    margin: 2em;
     color: black;
-    font-size: 1.75em; /* Decreased font size */
+    font-size: 2em; /* Increased font size */
     text-align: center;
 }
 
+h3 {
+    margin: 1em;
+    color: #417643;
+}
+
 main {
-    margin: 2.5em; /* Decreased margin */
+    margin: 2em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -112,7 +107,13 @@ main {
 footer {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding: 1.5em; /* Decreased padding */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    margin: 0 2em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -140,7 +141,7 @@ footer {
 
 .project-image {
     width: 100%;
-    max-width: 450px; /* Decreased size */
+    max-width: 600px;
     border: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -150,10 +151,10 @@ footer {
 }
 
 .project-description {
-    margin-top: 1.5em; /* Adjusted margin */
-    font-size: 1.4em; /* Decreased font size */
+    margin-top: 1em;
+    font-size: 1.1em; /* Slightly larger */
     text-align: left;
-    max-width: 900px;
+    max-width: 700px; /* Reduced max width */
     margin: auto;
 }
 
@@ -162,43 +163,79 @@ footer {
     margin-left: 2em;
 }
 
-.video-iframe {
-    max-width: 100%;
-    border: none;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-image {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+
+/* Card Layout for Projects */
+section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
     padding: 1em;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
+    max-width: 800px;
     width: 100%;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
     padding: 0.5em;
-    margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
 
-.contact-form button {
+form button {
+    margin-top: 1em;
+    padding: 0.7em;
     background-color: rgb(56, 47, 87);
     color: white;
-    padding: 0.5em 2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: rgb(40, 35, 60);
+form button:hover {
+    background-color: rgb(84, 70, 132);
 }
