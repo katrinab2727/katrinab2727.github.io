@@ -201,7 +201,8 @@ section:hover {
 
 /* Adjust iframe for responsiveness */
 .video-iframe {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 1000px; /* Adjusted max-width */
+    height: 700px; /* Adjusted height */
     margin-top: 1em; /* Added margin top */
 }
