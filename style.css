@@ -2,7 +2,7 @@
 body {
     background-color: rgb(240, 236, 245);
     color: black;
-    font-size: 1.2em; /* Slightly smaller than before */
+    font-size: 1.2em;
     font-family: 'Abhaya Libre', 'Times New Roman', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,10 +13,11 @@ body {
 header {
     background-color: rgb(56, 47, 87);
     color: white;
-    padding-top: 3em; /* Adjusted padding */
-    padding-bottom: 3em; /* Adjusted padding */
+    padding-top: 3em;
+    padding-bottom: 3em;
     text-align: center;
     position: relative;
+    z-index: 1; /* Ensure header is above other content */
 }
 
 nav ul {
@@ -34,7 +35,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 10px; /* Increased padding */
+    padding: 10px;
     background-color: rgb(240, 236, 245);
     color: rgb(56, 47, 87);
     text-decoration: none;
@@ -51,7 +52,7 @@ h1 {
     position: relative;
     display: inline-block;
     color: transparent;
-    font-size: 2.5em; /* Increased font size */
+    font-size: 2.5em;
     height: 1em;
     width: 100%;
 }
@@ -84,19 +85,14 @@ h1::before {
 }
 
 h2 {
-    margin: 2em 0; /* Adjusted margin */
+    margin: 2em 0;
     color: black;
-    font-size: 2em; /* Increased font size */
+    font-size: 2em;
     text-align: center;
 }
 
-h3 {
-    margin: 1em;
-    color: #417643;
-}
-
 main {
-    margin: 2em 1em; /* Adjusted margin */
+    margin: 2em 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -152,15 +148,30 @@ footer p {
 
 .project-description {
     margin-top: 1em;
-    font-size: 1.1em; /* Slightly larger */
+    font-size: 1.1em;
     text-align: left;
-    max-width: 700px; /* Reduced max width */
+    max-width: 800px; /* Adjusted max-width */
     margin: auto;
 }
 
 .project-description ul {
     list-style-type: disc;
     margin-left: 2em;
+}
+
+/* Card Layout for Projects */
+section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
+    padding: 2em; /* Increased padding */
+    max-width: 900px; /* Increased max-width */
+    width: calc(100% - 2em); /* Adjusted width */
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -186,62 +197,9 @@ footer p {
     }
 }
 
-/* Card Layout for Projects */
-section {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2em 0;
-    padding: 2em; /* Increased padding */
-    max-width: 800px;
-    width: 100%;
-}
-
-section:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Contact Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    margin: 0.5em 0 0.2em;
-}
-
-form input, form textarea {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-form button {
-    margin-top: 1em;
-    padding: 0.7em;
-    background-color: rgb(56, 47, 87);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: rgb(84, 70, 132);
-}
-
 /* Adjust iframe for responsiveness */
 .video-iframe {
     max-width: 100%;
     height: auto;
+    margin-top: 1em; /* Added margin top */
 }
