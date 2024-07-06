@@ -84,7 +84,7 @@ h1::before {
 }
 
 h2 {
-    margin: 2em;
+    margin: 2em 0; /* Adjusted margin */
     color: black;
     font-size: 2em; /* Increased font size */
     text-align: center;
@@ -96,7 +96,7 @@ h3 {
 }
 
 main {
-    margin: 2em;
+    margin: 2em 1em; /* Adjusted margin */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -192,7 +192,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2em 0;
-    padding: 1em;
+    padding: 2em; /* Increased padding */
     max-width: 800px;
     width: 100%;
 }
@@ -238,4 +238,10 @@ form button {
 
 form button:hover {
     background-color: rgb(84, 70, 132);
+}
+
+/* Adjust iframe for responsiveness */
+.video-iframe {
+    max-width: 100%;
+    height: auto;
 }
