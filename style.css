@@ -85,7 +85,7 @@ h1::before {
 }
 
 h2 {
-    margin: 2em 0;
+    margin: 2em 0 1.5em 0; /* Reduced bottom margin */
     color: black;
     font-size: 2em;
     text-align: center;
