@@ -17,7 +17,7 @@ header {
     padding-bottom: 3em;
     text-align: center;
     position: relative;
-    z-index: 1; /* Ensure header is above other content */
+    z-index: 2; /* Ensure header is above other content */
 }
 
 nav ul {
@@ -168,6 +168,8 @@ section {
     padding: 2em; /* Increased padding */
     max-width: 900px; /* Increased max-width */
     width: calc(100% - 2em); /* Adjusted width */
+    position: relative;
+    z-index: 1; /* Ensure sections are behind header */
 }
 
 section:hover {
