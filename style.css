@@ -137,7 +137,7 @@ footer p {
 
 .project-image {
     width: 100%;
-    max-width: 400px; /* Adjust the size here */
+    max-width: 350px; /* Adjusted size */
     border: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -203,6 +203,6 @@ section:hover {
 .video-iframe {
     width: 100%;
     max-width: 1000px; /* Adjusted max-width */
-    height: 700px; /* Adjusted height */
+    height: 800px; /* Increased height */
     margin-top: 1em; /* Added margin top */
 }
