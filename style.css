@@ -224,7 +224,8 @@ section {
 .project-overlay {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Adjust size as needed */
+    max-width: 300px; /* Adjust size as needed */
+    margin: 0 auto; /* Center the button horizontally */
     overflow: hidden;
 }
 
