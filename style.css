@@ -253,3 +253,25 @@ section {
     font-size: 1.2em;
     pointer-events: none;
 }
+
+.project-image-recipe {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width for Recipe Assistant */
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image-recipe:hover {
+    transform: scale(1.05);
+}
+
+.project-image-app {
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width for the app image */
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image-app:hover {
+    transform: scale(1.05);
+}
