@@ -244,7 +244,7 @@ section {
     text-align: center;
 }
 
-.project-overlay:hover .project-overlay-recipe:hover .overlay {
+.project-overlay:hover .overlay {
     opacity: 1;
 }
 
@@ -256,7 +256,7 @@ section {
     margin: auto; /* Center align the project overlay */
 }
 
-.project-overlay-recipe .overlay-recipe {
+.project-overlay-recipe .overlay {
     position: absolute;
     top: 0;
     left: 0;
