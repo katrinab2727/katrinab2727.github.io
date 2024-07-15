@@ -251,7 +251,7 @@ section {
 .project-overlay-recipe {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     overflow: hidden;
     margin: auto; /* Center align the project overlay */
 }
@@ -271,7 +271,7 @@ section {
     text-align: center;
 }
 
-.project-overlay-recipe:hover .overlay-recipe {
+.project-overlay-recipe:hover .overlay{
     opacity: 1;
 }
 
