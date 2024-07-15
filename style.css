@@ -271,7 +271,7 @@ section {
     text-align: center;
 }
 
-.project-overlay:hover .overlay {
+.project-overlay-recipe:hover .overlay {
     opacity: 1;
 }
 
