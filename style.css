@@ -315,7 +315,7 @@ section {
 }
 
 .center-skills ul li::before {
-    content: "• "; /* Add bullet point manually */
+    content: "•"; /* Add bullet point manually */
     color: black; /* Set bullet color */
     font-size: 1.2em; /* Adjust size as needed */
 }
