@@ -302,3 +302,21 @@ section {
 .project-image-app:hover {
     transform: scale(1.05);
 }
+
+.center-skills {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.center-skills ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    text-align: center; /* Center the text inside the list */
+}
+
+.center-skills ul li::before {
+    content: "• "; /* Add bullet point manually */
+    color: black; /* Set bullet color */
+    font-size: 1.2em; /* Adjust size as needed */
+}
+
