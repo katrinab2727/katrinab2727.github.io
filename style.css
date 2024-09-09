@@ -306,17 +306,24 @@ section {
 .center-skills {
     display: flex;
     justify-content: center; /* Center the content horizontally */
+    margin-top: 0; /* Remove any unnecessary top margin */
 }
 
 .center-skills ul {
     list-style: none; /* Remove default bullet points */
     padding: 0;
+    margin: 0; /* Remove any margin around the list */
     text-align: center; /* Center the text inside the list */
 }
 
 .center-skills ul li::before {
-    content: "•"; /* Add bullet point manually */
+    content: "• "; /* Add bullet point manually */
     color: black; /* Set bullet color */
     font-size: 1.2em; /* Adjust size as needed */
 }
+
+h2 {
+    margin-bottom: 10px; /* Adjust the space between heading and list */
+}
+
 
